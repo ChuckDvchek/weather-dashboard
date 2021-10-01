@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <!-- city search -->
+
+        <section id="city-search">
+
+            <!-- search bar -->
+
+            <section id="search">
+                <h2>Search for a City:</h2>
+                <input id="city-input" type="text">
+                <button id="search-btn">Search</button>
+            </section>
+
+            <hr>
+            <!-- previously searched cities -->
+
+            <section id="previous-search">
+                <ul id="previous-city-list"></ul>
+            </section>
+
+        </section>
+
+
+        <!-- weather info -->
+
+        <section id="weather-info">
+
+            <!-- current weather of chosen city -->
+            
+            <section id="current">
+                
+                <!-- display of city, today's date, and current weather icon -->
+                
+                <h2 id="city-date-icon">
+                    <span id="current-time"></span> 
+                    <span id="current-city"></span> 
+                    <span><img id="current-icon"></span>
+                </h2>
+                
+                
+                <!-- display of current temperature, wind speed, humidity, and uv index -->
+                
+                <p id="current-temp">Temp: <span id="temp-val">-</span>&#8457;</p>
+                
+                <p id="current-wind">Wind: <span id="wind-val">-</span> MPH</p>
+                
+                <p id="current-humidity">Humidity: <span id="humidity-val">-</span> %</p>
+                
+                <p id="current-uvi">UV Index: <span id="uvi-val">-</span></p>
+                
+            </section>
+            
+            
+            <!-- five day forecast -->
+            
+            <h3>5-Day Forecast:</h3>
+
+            <section id="five-day">
+                
+                <!-- 5 info cards for each day -->
+                
+                <!-- day one -->
+                <div class="five-day-card" id="day-1">
+                    
+                    <h4 id="date-of-d1">---</h4>
+                    
+                    <img id="d1-icon">
+
+                    <p id="d1-temp">Temp: <span id="d1-temp-val">-</span>&#8457;</p>
+                    
+                    <p id="d1-wind">Wind: <span id="d1-wind-val">-</span> MPH</p>
+                    
+                    <p id="d1-humidity">Humidity: <span id="d1-humidity-val">-</span> %</p>
+                    
+                </div>
+                
+                <!-- day two -->
+                <div class="five-day-card" id="day-2">
+                    
+                    <h4 id="date-of-d2">---</h4>
+                    
+                    <img id="d2-icon">
+
+                    <p id="d2-temp">Temp: <span id="d2-temp-val">-</span>&#8457;</p>
+                    
+                    <p id="d2-wind">Wind: <span id="d2-wind-val">-</span> MPH</p>
+                    
+                    <p id="d2-humidity">Humidity: <span id="d2-humidity-val">-</span> %</p>
+                    
+                </div>
+                
+                <!-- day three -->
+                <div class="five-day-card" id="day-3">
+                    
+                    <h4 id="date-of-d3">---</h4>
+                    
+                    <img id="d3-icon">
+
+                    <p id="d3-temp">Temp: <span id="d3-temp-val">-</span>&#8457;</p>
+                    
+                    <p id="d3-wind">Wind: <span id="d3-wind-val">-</span> MPH</p>
+                    
+                    <p id="d3-humidity">Humidity: <span id="d3-humidity-val">-</span> %</p>
+                    
+                </div>
+                
+                <!-- day four -->
+                <div class="five-day-card" id="day-4">
+                    
+                    <h4 id="date-of-d4">---</h4>
+                    
+                    <img id="d4-icon">
+
+                    <p id="d4-temp">Temp: <span id="d4-temp-val">-</span>&#8457;</p>
+                    
+                    <p id="d4-wind">Wind: <span id="d4-wind-val">-</span> MPH</p>
+                    
+                    <p id="d4-humidity">Humidity: <span id="d4-humidity-val">-</span> %</p>
+                    
+                </div>
+                
+                <!-- day five -->
+                <div class="five-day-card" id="day-5">
+                    
+                    <h4 id="date-of-d5">---</h4>
+                    
+                    <img id="d5-icon">
+
+                    <p id="d5-temp">Temp: <span id="d5-temp-val">-</span>&#8457;</p>
+                    
+                    <p id="d5-wind">Wind: <span id="d5-wind-val">-</span> MPH</p>
+                    
+                    <p id="d5-humidity">Humidity: <span id="d5-humidity-val">-</span> %</p>
+                    
+                </div>
+                
+            </section>
+
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
